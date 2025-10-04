@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeX | Minimal Typing Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <span class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L3 7L12 11L21 7L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 7L12 11L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 11V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 14L3 12V17L7 19V14Z" fill="currentColor"/>
+                        <path d="M17 14L21 12V17L17 19V14Z" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="logo-text">TypeX</span>
+            </a>
+            <div class="navbar-actions">
+                <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Game Container -->
+            <div class="game-container" id="game-container">
+                <div class="game-header">
+                    <div class="game-title-container">
+                        <h1 class="game-title">Typing Assessment</h1>
+                        <p class="game-subtitle">Test your speed and accuracy</p>
+                    </div>
+                    
+                    <div class="difficulty-selector">
+                        <div class="difficulty-tabs">
+                            <button class="difficulty-tab active" data-level="beginner">
+                                Beginner
+                            </button>
+                            <button class="difficulty-tab" data-level="intermediate">
+                                Intermediate
+                            </button>
+                            <button class="difficulty-tab" data-level="advanced">
+                                Advanced
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="wpm-stat">0</div>
+                        <div class="stat-label">Words Per Minute</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="accuracy-stat">0%</div>
+                        <div class="stat-label">Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="time-stat">0s</div>
+                        <div class="stat-label">Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="score-stat">0</div>
+                        <div class="stat-label">Score</div>
+                    </div>
+                </div>
+                
+                <div class="typing-interface">
+                    <div class="text-display" id="sentence-display" tabindex="0">
+                        Click "Start Test" to begin your typing assessment.
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <textarea class="text-input" id="text-input" placeholder="Begin typing here..." disabled></textarea>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="start-btn">
+                        <i class="fas fa-play"></i> Start Test
+                    </button>
+                    <button class="btn btn-secondary" id="reset-btn" disabled>
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Results Modal -->
+        <div class="modal-overlay" id="results-modal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h2>Assessment Complete</h2>
+                    <p>Your typing results are ready</p>
+                    <button class="close-modal" id="close-modal-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <div class="stat-value" id="result-wpm">0</div>
+                            <div class="stat-label">WPM</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="stat-value" id="result-accuracy">0%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="stat-value" id="result-time">0s</div>
+                            <div class="stat-label">Time</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="stat-value" id="result-score">0</div>
+                            <div class="stat-label">Score</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="try-again-btn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
