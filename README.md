@@ -59,28 +59,6 @@ Type--X/
 
 ---
 
-## 🚀 How to Run Locally
-
-
-# 1. Clone the repo
-git clone https://github.com/SAKTHISANJAIRM/Type--X.git
-
-# 2. Open index.html in browser
-
-
-✅ That’s it — no build tools or setup needed!
-
----
-
-## 🧠 Author
-
-**Sakthi Sanjai R M**
-📧 [sakthisanjairm@gmail.com](mailto:sakthisanjairm@gmail.com)
-🌐 [Portfolio](https://sakthisanjairm.github.io/Portfolio/)
-🔗 [LinkedIn](https://linkedin.com/in/sakthisanjairm) • [GitHub](https://github.com/SAKTHISANJAIRM)
-
----
-
 ## 🌟 Show Some Love
 
 If you liked this project, consider giving it a ⭐ and sharing it!
