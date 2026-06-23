@@ -17,8 +17,8 @@
 
 ## 📸 Demo
 
-👉 [**Live Game**](https://sakthisanjairm.github.io/Type--X/)  
-![demo](https://github.com/SAKTHISANJAIRM/Type--X/blob/main/assets/demo.gif)
+👉 [**Live Game**](https://jeevasakthi-m.github.io/TYPE-X/.git)          
+![demo](https://github.com/jeevasakthi-m/Type-X/blob/main/assets/demo.gif)
 
 ---
 
