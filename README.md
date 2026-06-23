@@ -17,7 +17,7 @@
 
 ## 📸 Demo
 
-👉 [**Live Game**](https://jeevasakthi-m.github.io/TYPE-X/.git)          
+👉 [**Live Game**](https://jeevasakthi-m.github.io/TYPE-X/)          
 ![demo](https://github.com/jeevasakthi-m/Type-X/blob/main/assets/demo.gif)
 
 ---
